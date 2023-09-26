@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,14 +14,54 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+.switch_body_basic_off {
+  background-image: url(../../public/Switch_body/basic-off.png);
+  transition: 0.3s;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.switch_body_basic_on {
+  background-image: url(../../public//Switch_body/basic-on.png);
+  transition: 0.3s;
+}
+
+.switch_body_orange_off {
+  background: url(../../public//Switch_body/orange-off.png);
+  transition: 0.3s;
+}
+.switch_body_orange_on {
+  background: url(../../public//Switch_body/orange-on.png);
+  transition: 0.3s;
+}
+
+.switch_button_orange_off {
+  background: url(../../public/Switch_buttons/orange-off.png);
+  background-size: contain;
+}
+.switch_button_orange_on {
+  background: url(../../public/Switch_buttons/orange-on.png);
+  background-size: contain;
+}
+
+.switch_body_night_forest {
+  background: url(../../public/Switch_body/night-forest.png);
+}
+.switch_body_day_forest {
+  background: url(../../public/Switch_body/day-forest.png);
+}
+
+.switch_body_night {
+  background: url(../../public/Switch_body/night.png);
+}
+.switch_body_day {
+  background: url(../../public/Switch_body/day.png);
+}
+.switch_button_night {
+  background: url(../../public/Switch_buttons/night.png);
+  background-size: contain;
+}
+.switch_button_day {
+  background: url(../../public/Switch_buttons/day.png);
+  background-size: contain;
 }
